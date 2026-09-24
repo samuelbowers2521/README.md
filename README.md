@@ -1,1 +1,2 @@
-# README.md
+# Git practice
+My first Git repository
