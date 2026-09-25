@@ -62,7 +62,7 @@ __all__ = [
     "surround", # refers to the 'surround.py' file
     'reverse', # !!! refers to the 'reverse' function now !!!
 ]
-def reverse(msg str): # <-- this name shadows 'reverse.py' submodule
+def reverse(msg: str): # <-- this name shadows 'reverse.py' submodule
     return msg[::-1]  #     im the case of a 'from sound.effects import *'
 import sound.effects.echo # pyright: ignore[reportMissingImports]
 import sound.effects.surround # pyright: ignore[reportMissingImports]
