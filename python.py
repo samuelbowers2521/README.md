@@ -1,9 +1,3 @@
-from gzip import WRITE
-from http.client import _DataType
-from typing import Any
-
-from requests import post
-
 
 the_world_is_flate = True 
 if the_world_is_flate:
