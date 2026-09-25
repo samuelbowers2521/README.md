@@ -48,3 +48,57 @@ dir(sys)
  'setprofile', 'setrecursionlimit', 'setswitchinterval', 'settrace', 'stderr',
  'stdin', 'stdout', 'thread_info', 'unraisablehook', 'version', 'version_info',
  'warnoptions']
+a = [1, 2, 3, 4, 5]
+import fibo  # pyright: ignore[reportMissingImports]
+fibo = fibo.bib
+dir()
+import sound.effect.echo # pyright: ignore[reportMissingImports]
+sound.effect.echofilter(input, output, delay=0.7, atten=4) # pyright: ignore[reportUndefinedVariable]
+from sound.effect import echo # pyright: ignore[reportMissingImports]
+from sound.effect.echo import echofilter  # pyright: ignore[reportMissingImports]
+echofilter(input, output, delay=0.7, atten=4) # pyright: ignore[reportUndefinedVariable]
+__all__ = [
+    "echo", # refers to the 'echo.py' file
+    "surround", # refers to the 'surround.py' file
+    'reverse', # !!! refers to the 'reverse' function now !!!
+]
+def reverse(msg str): # <-- this name shadows 'reverse.py' submodule
+    return msg[::-1]  #     im the case of a 'from sound.effects import *'
+import sound.effects.echo # pyright: ignore[reportMissingImports]
+import sound.effects.surround # pyright: ignore[reportMissingImports]
+from sound.effects import * # pyright: ignore[reportMissingImports]
+from . import echo # pyright: ignore[reportMissingImports]
+from .. import formates # pyright: ignore[reportMissingImports]
+from ..filters import equalizer # pyright: ignore[reportMissingImports]
+year = 2016
+event = 'Referendum'
+f'Results of the {year} {event}'
+'Results of the 2016 Referendum'
+yes_votes = 42_572_654
+total_votes = 85_705_149
+percentage = yes_votes / total_votes 
+s = 'Hello, world'
+str(s)
+'Hello world.'
+repr(s)
+"'Hello world.'"
+str(1/7)
+'0.14285714285714285'
+x = 10 * 3.25
+y = 200 * 200
+s = 'The value of x is ' + repr(x) and y is repr(y) 
+print(s)
+# The repr() of a string adds string add string quotes and backLashes:
+hello = 'hello, world\n'
+hello = repr(hello)
+print(hellos) # pyright: ignore[reportUndefinedVariable]
+'hello, world\n'
+# THe argument to repr() may be any python object:
+repr((x, y, ('spam)', 'eggs')))
+import math 
+print('f The value of pi is approximately {math.pi:.3f}.')
+with open('workfile', encoding="utf-8") as f:
+    read_data = f.read()
+    # We can check that the file has been automatically closed.
+f.closed
+True
