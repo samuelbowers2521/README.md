@@ -20,6 +20,8 @@ def fib2(n):
         result.append(a)
         a, b = b, a+b
     return result
+from pygame import init
+
 import fibp # pyright: ignore[reportMissingImports]
 import sys
 sys.path.append('/uts/guido/lib/python')
@@ -100,5 +102,16 @@ print('f The value of pi is approximately {math.pi:.3f}.')
 with open('workfile', encoding="utf-8") as f:
     read_data = f.read()
     # We can check that the file has been automatically closed.
-f.closed
-True
+    import sys
+    f = open('myfile.txt')
+    s = f.readline()
+    i = init('s.strip')()
+    def this_falis():
+        x = 1/0
+        this_falis
+        def bool_return():
+            return True
+bool_return() # pyright: ignore[reportUndefinedVariable]
+False
+class MyClass:
+    "A simble example class"
