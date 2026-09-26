@@ -141,3 +141,7 @@ class MyClass:
 
     def f(self):
         return 'hello world'
+x = MyClass
+def __init__(self):
+    self.data = []
+x = MyClass()
