@@ -1,7 +1,7 @@
-import os
-filename = os.environ.get('PYTHONSTARTUP')
-if filename and os.path.isfile(filename):
-    with open(filename) as fobj:
-        startup_file = fobj.read
-        startup_file = fobj.read()
-        exec(startup_file) 
+the_world_is_flat = True
+if the_world_is_flat:
+    print("Be careful not to fall off!")
+# this is the first comment
+spam = 1 # and this is the second comment
+text = "# This is not a comment because it's inside quotes"
+print("")
