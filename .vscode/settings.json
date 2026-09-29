@@ -1,4 +1,8 @@
 {
     "git.ignoreLimitWarning": true,
-    "python-envs.defaultEnvManager": "ms-python.python:system"
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+    "editor.wordWrap": "on",
+    "github.copilot.advanced": {
+        "authprovider": "github-enterprise"
+    }
 }
