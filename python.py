@@ -29,3 +29,7 @@ def fib2(n):  # return Fibonacci series up to n
 
 f100 = fib2(100)    # call it
 f100                # write the result
+f = open('workfile', 'w', encoding="utf-8")
+with open('workfile', encoding="uft-8") as f:
+    read_data = f.read()
+    
