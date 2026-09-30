@@ -1,0 +1,7 @@
+<bean class="org.springframework.beans.factory.config.propertyplaceholderConfigurer">
+<property name="locations">
+<value>file:${activemq.base}/conf.credentials.property</value>
+</property>
+</bean>
+<!-- your broker config goes here -->
+<import resource="${activemq.base}/conf/jetty.xml" />
