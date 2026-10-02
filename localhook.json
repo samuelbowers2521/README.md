@@ -1,0 +1,18 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "type": "command",
+        "command": "./scripts/validate-tool.sh",
+        "windows": "powershell -File scripts\\validate-tool.ps1",
+        "timeout": 15
+      }
+    ],
+    "PostToolUse": [
+      {
+        "type": "command",
+        "command": "npx prettier --write ."
+      }
+    ]
+  }
+}
