@@ -4,5 +4,6 @@
     "editor.wordWrap": "on",
     "github.copilot.advanced": {
         "authprovider": "github-enterprise"
-    }
+    },
+    "python.REPL.enableREPLSmartSend": false
 }

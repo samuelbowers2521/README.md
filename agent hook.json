@@ -1,9 +1,0 @@
-(
-"name": Strict Formatter
-"description": Formate code after the agent use a tool 
-"hooks":
-"PostToolUse": 
-"type": "command"
-"command": ".scripts/format-changed-files.sh"
-Follow the project's formatting reqyuirements)
-)
