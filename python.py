@@ -5,6 +5,7 @@ from ast import main
 from dataclasses import dataclass
 from enum import Enum
 from os import name
+import os
 from posixpath import join
 from pyclbr import Class
 from re import match
@@ -93,3 +94,18 @@ class Reverse:
             raise StopIteration
         self.index = self.index - 1
         return self.data[self.index]
+    import os
+    os.getcwd() # Return the current working directory
+    'C:\\python313'
+    os.chdir('/server/accesslogs') # Change current working directory
+    os.system('mkdir tody') # Run the command mkdir in the system shell 
+    0
+    import os 
+    dir(os)
+    <return a list of all module functions> #type: ignore
+help(os)
+"return an extensive manual page  created from the module's docstings"
+import shutil
+shutil.copyfile('data.db', 'archive.db')
+
+shutil.move('/build/executables', 'installdir')
