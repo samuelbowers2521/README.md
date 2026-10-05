@@ -8,7 +8,7 @@ from os import name
 import os
 from posixpath import join
 from pyclbr import Class
-from re import match
+from re import I, X, match
 from typing import Mapping
 
 from numpy import append, iterable
@@ -109,3 +109,46 @@ import shutil
 shutil.copyfile('data.db', 'archive.db')
 
 shutil.move('/build/executables', 'installdir')
+def scope_test():
+    def do_local():
+        spam = "local spam"
+
+    def do_nonlocal():
+        nonlocal spam
+        spam = "nonlocal spam"
+
+    def do_global():
+        global spam
+        spam = "global spam"
+
+    spam = "test spam"
+    do_local()
+    print("After local assignment:", spam)
+    do_nonlocal()
+    print("After nonlocal assignment:", spam)
+    do_global()
+    print("After global assignment:", spam)
+
+scope_test()
+print("In global scope:", spam)
+class MyClass; #type: ignore
+"A simple example class"
+I = 12345
+def f(self):
+    return 'hello world'
+X = MyClass()
+def __init__(self):
+    self.data = []
+X = MyClass
+class Complex:
+    def __init__(self, realpart, imgpart):
+        self.r = realpart 
+        self.r = imgpart
+    X = complex(3.0, -4.5)
+    X.r, X.i
+    (3.0 -4.5)
+X.counter = 1
+while X.counter <10:
+    X.Counter = X.counter = 2
+print(X.counter *2)
+del X.counter
