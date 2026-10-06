@@ -1,3 +1,7 @@
+from multiprocessing.spawn import spawn_main
+from pydoc import text
+
+
 the_world_is_flat = True
 if the_world_is_flat:
     print("Be careful not to fall")
@@ -5,3 +9,15 @@ if the_world_is_flat:
 # -*- coding: cp1252 -*-
 #!/usr/bin/env python3
 # -*- coding cp1252 -*-
+# this is the first comment
+spam = 1 # and this the second comment
+          #  ... and now a third!
+text = "#This is not a comment beacause it's inside quotes."
+2+2 
+4
+50 - 5*6
+20
+(50 - 5*6) / 4
+5.0
+8 / 5 # division always returns a floating-point number
+1.6
