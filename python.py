@@ -21,3 +21,12 @@ text = "#This is not a comment beacause it's inside quotes."
 5.0
 8 / 5 # division always returns a floating-point number
 1.6
+17 / 3  # classic division returns a float
+
+
+17 // 3  # floor division discards the fractional part
+
+17 % 3  # the % operator returns the remainder of the division
+
+5 * 3 + 2  # floored quotient * divisor + remainder
+5 ** 2 5 squared #type: ignore
