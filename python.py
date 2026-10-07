@@ -1,8 +1,6 @@
 from multiprocessing.spawn import spawn_main
 from pydoc import text
 from turtle import width
-
-
 the_world_is_flat = True
 if the_world_is_flat:
     print("Be careful not to fall")
@@ -23,10 +21,7 @@ text = "#This is not a comment beacause it's inside quotes."
 8 / 5 # division always returns a floating-point number
 1.6
 17 / 3  # classic division returns a float
-
-
 17 // 3  # floor division discards the fractional part
-
 17 % 3  # the % operator returns the remainder of the division
 
 5 * 3 + 2  # floored quotient * divisor + remainder
