@@ -1,5 +1,6 @@
 from multiprocessing.spawn import spawn_main
 from pydoc import text
+from turtle import width
 
 
 the_world_is_flat = True
@@ -29,4 +30,11 @@ text = "#This is not a comment beacause it's inside quotes."
 17 % 3  # the % operator returns the remainder of the division
 
 5 * 3 + 2  # floored quotient * divisor + remainder
-5 ** 2 5 squared #type: ignore
+5 ** 2 5 squared #type: ignore  
+25
+2 ** 7 # 2 to the power of 7
+128
+width = 20
+height = 5 * 9 
+width * height
+900 
